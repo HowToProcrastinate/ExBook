@@ -1,0 +1,55 @@
+
+/* Estilos del Header */
+
+.header {
+    height: 60px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .icon-menu-list {
+    margin: 5px;
+}
+
+.icon-menu-list {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: lightgreen;
+    color: brown;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.navegacion {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_link {
+    display: block;
+    padding: 20px;
+    background: lightgreen;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu_link:hover {
+    background: white;
+    color: tomato;
+}
