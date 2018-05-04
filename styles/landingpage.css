@@ -6,12 +6,14 @@
 }
 
 .contenedor {
-    display: flex;
-    justify-content: space-between;
+    margin: auto;
+    width: 99%;
 }
 
-.logo, .icon-menu-list {
+.logo, 
+.icon-menu-list {
     margin: 5px;
+    color: white;
 }
 
 .icon-menu-list {
@@ -20,7 +22,6 @@
     height: 40px;
     font-size: 30px;
     background: lightgreen;
-    color: brown;
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
@@ -31,8 +32,9 @@
 .navegacion {
     position: absolute;
     top: 60px;
-    left: 0;
+    left: -100%;
     width: 100%;
+    transition: all 0.4s;
 }
 
 .menu {
@@ -43,13 +45,102 @@
 
 .menu_link {
     display: block;
-    padding: 20px;
+    padding: 15px;
     background: lightgreen;
     text-decoration: none;
     color: #fff;
 }
 
-.menu_link:hover {
+.menu_link:hover, 
+.select {
     background: white;
     color: tomato;
+}
+
+.mostrar {
+    left: 0;    
+}
+
+/*--------------------Estilos del banner--------------------*/
+
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+
+.banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.banner_parrafo {
+    display: none;
+}
+
+/*---------------Estilos de informacion---------------*/
+
+.info_columna {
+    background: tomato;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+
+/*---------------Estilos de Servicios---------------*/
+
+.section_titulo {
+    text-align: center;
+    font-size: 40px;
+    color: tomato;
+}
+
+.servicios_columna {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.servicios_descripcion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+
+.servicios_titulo {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+/*-------------Estilos del Footer-------------*/
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
 }
