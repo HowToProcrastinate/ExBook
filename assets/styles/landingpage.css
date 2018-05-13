@@ -1,13 +1,24 @@
 
-/* Estilos del Header */
 
-.header {
-    height: 60px;
+.section_titulo {
+    text-align: center;
+    font-size: 40px;
+    color: tomato;
 }
 
 .contenedor {
     margin: auto;
     width: 99%;
+}
+
+/* Estilos del Header */
+.header {
+    height: 60px;
+}
+
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo, 
@@ -96,12 +107,6 @@
 
 /*---------------Estilos de Servicios---------------*/
 
-.section_titulo {
-    text-align: center;
-    font-size: 40px;
-    color: tomato;
-}
-
 .servicios_columna {
     position: relative;
     margin-bottom: 30px;
@@ -121,6 +126,10 @@
 .servicios_titulo {
     font-size: 25px;
     margin: 5px 0;
+}
+
+.servicios_img {
+    width: 100%;
 }
 
 /*-------------Estilos del Footer-------------*/
@@ -143,4 +152,134 @@
     width: 50px;
     height: 50px;
     line-height: 40px;
+}
+
+/*--------------Estilos responsive--------------*/
+
+@media(min-width:480px) {
+    .logo {
+        font-size: 40px;
+    }
+
+    .banner_titulo {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .banner_parrafo {
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+
+    .informacion, .servicios {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -90px;
+    }
+
+    .info_columna {
+        width: 32%;
+    }
+
+    .info_titulo {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .section_titulo {
+        width: 100%;
+    }
+
+    .servicios {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .servicios_columna {
+        width: 49%;
+    }    
+
+    .footer .social [class^="icon-"] {
+        margin: 0 10px;
+      }
+}
+
+@media(min-width:768px) { 
+    .banner_titulo {
+        font-size: 50px;
+    }
+    .section_titulo {
+        font-size: 40px;
+    }
+}
+
+@media(min-width:1024px) { 
+    .contenedor {
+        width: 1000px;
+    }
+    .section_titulo {
+        font-size: 50px;
+        margin: 30px 0;
+    }
+    .navegacion {
+        position: static;
+        width: auto;
+    }
+    .menu {
+        display: flex;
+    }
+
+    .icon-menu-list {
+        display: none;
+    }
+
+    .menu_link {
+        background: none;
+    }
+
+    .select {
+        color: white;
+        background: tomato;
+    }
+    
+    .banner_titulo {
+        font-size: 60px;
+    }
+
+    .banner_parrafo {
+        font-size: 25px;
+    }
+
+    .info_titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .servicios_descripcion {
+        padding: 20px;
+    }
+
+    .section_titulo {
+        font-size: 50px;
+    }
+
+    .servicios_parrafo {
+        font-size: 20px;
+    }    
+}
+
+@media(min-width:1280px) {
+    .contenedor {
+        width: 1200px;
+    }
+    .logo {
+        font-size: 70px;
+    }
+    .banner .contenedor {
+        top: 40%;
+    }
+    .informacion {
+        margin-top: -250px;
+    }
 }
