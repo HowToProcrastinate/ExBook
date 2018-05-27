@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/notes.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Notes</title>
+</head>
+
+<body>
+    <form class="formulario" method="POST" name="note" id="note">
+        <div>
+            <label class="label--form" for="title">Titulo:</label>
+            <input type="text" class="input" name="title" id="title">
+
+        </div>
+        <div>
+            <label class="label--form" for="body">Contenido:</label>
+            <textarea name="body" id="body" cols="30" rows="10" class="textarea" placeholder="Escribe aqui tu contenido..."></textarea>
+        </div>
+        <button type="button" id="enviar">Click Me!</button>
+        <!-- <input type="submit" class="envio" value="Enviar"> -->
+
+    </form>
+
+    <div class="card">
+        <div class="container">
+            <h4 class="title">John Doe</h4>
+            <p class="body">Architect & Engineer</p>
+        </div>
+    </div>
+<script src="assets/js/addNote.js"></script>
+</body>
+
+</html>
